@@ -1,0 +1,51 @@
+/** =Base */
+
+$base-font-size:    16px!default;
+$base-line-height:  24px!default;
+
+// Base Font-Family
+
+$base-font-family:  Ubuntu, sans-serif!default;
+
+
+/** =Font-Sizes */
+
+// Font-sizes (in pixels). Refer to relevant sections for their implementations.
+
+$h1-size:           36px!default;
+$h2-size:           30px!default;
+$h3-size:           24px!default;
+$h4-size:           20px!default;
+$h5-size:           16px!default;
+$h6-size:           14px!default;
+
+$milli-size:        12px!default;
+$micro-size:        10px!default;
+
+
+/** =Brand **/
+
+    // http://www.colourlovers.com/palette/3036571/TREE
+    $lemon-peel: #d0f30c;
+
+    // http://www.colourlovers.com/palette/3036355/spring_fun
+    $blue-zine: #92daff;
+
+    // http://www.colourlovers.com/palette/3036307/JUMP_AROUND
+    $arrosisca: #ff4b8d;
+    $stay-here: #2acaff;
+    $pumpkin-pie: #fb4400;
+
+    // primary - stay here
+    $primary-color: $stay-here;
+    // secondary - #a8a8a8
+    $secondary-color: #a8a8a8;
+    // highlight - lemon Peel
+    $highlight-color: $lemon-peel;
+    // action - arrosisca
+    $action-color: $arrosisca;
+
+
+$brand-color:       $blue-zine;
+$brand-face:        'Open Sans Condensed', sans-serif;
+
