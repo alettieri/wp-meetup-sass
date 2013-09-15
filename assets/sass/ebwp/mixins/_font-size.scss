@@ -1,0 +1,4 @@
+@mixin font-size( $size: $base-font-size ) {
+    font-size: strip-unit($size) * 1px;
+    font-size: ( strip-unit($size) / 10 ) * 1rem;
+}

@@ -1,0 +1,77 @@
+// Our input elements
+$input-border-color: #ccc;
+$input-border-width: 1px;
+$input-border-style: solid;
+
+$input-border-radius: 3px;
+
+$input-padding: 3px;
+
+$input-color: #666;
+$input-focus-color: #111;
+
+// Checkbox and Radio Buttons
+$checkbox-box-sizing: border-box;
+$checkbox-padding: 0;
+
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* Corrects font size not being inherited in all browsers */
+    margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+    vertical-align: baseline; /* Improves appearance and consistency in all browsers */
+    *vertical-align: middle; /* Improves appearance and consistency in all browsers */
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    @include box-sizing( $checkbox-box-sizing ); /* Addresses box sizing set to content-box in IE8/9 */
+    padding: $checkbox-padding; /* Addresses excess padding in IE8/9 */
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
+    @include box-sizing( content-box ); /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+}
+
+input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+    -webkit-appearance: none;
+}
+
+// Text based input placeholder
+%text-input {
+    color: $input-color;
+    border: $input-border-width $input-border-style $input-border-color;
+    padding: $input-padding;
+
+    @include border-radius( $input-border-radius );
+    &:focus {
+        color: $input-focus-color;
+    }
+}
+
+input[type="text"] {
+    @extend %text-input;
+}
+input[type="email"] {
+    @extend %text-input;
+}
+input[type="url"] {
+    @extend %text-input;
+}
+input[type="password"] {
+    @extend %text-input;
+}
+input[type="search"] {
+    @extend %text-input;
+}
+
+textarea {
+    @extend %text-input;
+    padding: 0 0 0 3px;
+    vertical-align: top;
+    overflow: auto;
+    width: 98%;
+}
