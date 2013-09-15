@@ -589,6 +589,10 @@ a:active {
                         left: 100%;
                         top: 0;
                 }
+                
+                .main-navigation ul li:hover > ul {
+                    display: block;
+                }
 
         }
 
