@@ -31,8 +31,9 @@
 			<h1 class="menu-toggle"><?php _e( 'Menu', 'ebwp' ); ?></h1>
 			<div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'ebwp' ); ?>"><?php _e( 'Skip to content', 'ebwp' ); ?></a></div>
 
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
+	
