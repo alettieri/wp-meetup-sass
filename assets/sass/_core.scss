@@ -530,6 +530,10 @@ a:active {
                         top: 0;
                 }
 
+                .main-navigation ul li:hover > ul {
+                    display: block;
+                }
+
         }
 
 /* Small menu */
